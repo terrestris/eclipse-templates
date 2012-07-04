@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+    <template 
+        autoinsert="true" context="javaScript" deleted="false"
+        description="console.log(arguments)" enabled="true" 
+        name="args">console.log(arguments);
+    </template>
+    <template 
+        autoinsert="true" context="javaScript" deleted="false"
+        description="this.callParent command of ExtJs4/ST2" enabled="true"
+        name="callparent">this.callParent(arguments);
+    </template>
+    <template autoinsert="true" context="javaScript" deleted="false"
+        description="Ext.define(...) stub ExtJs4/ST2" enabled="true"
+        name="edefine">/**
+ * @class
+ */
+Ext.define(${newClassName}, {
+    requires: [
+    ],
+    extend: ${className},
+    xtype: ${newXtype},
+    
+    config: {
+    },
+
+    /**
+     *
+     */
+    constructor: function(config){
+        var me = this;
+
+        me.callParent(arguments);
+    },
+
+    /**
+     *
+     */
+    initialize: function() {
+        var me = this;
+
+        me.callParent(arguments);
+    } 
+});
+    </template>
+    <template autoinsert="true" context="javaScript" deleted="false"
+        description="console.log(...)" enabled="true"
+        name="log">console.log(${whatToLog});
+    </template>
+    <template autoinsert="true" context="javaScript" deleted="false"
+        description="An alias for this" enabled="true"
+        name="me">var me = this;
+    </template>
+</templates>
