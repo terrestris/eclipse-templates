@@ -10,6 +10,10 @@
         description="this.callParent command of ExtJs4/ST2" enabled="true"
         name="callparent">this.callParent(arguments);
     </template>
+    <template autoinsert="true" context="javaScript" deleted="false" 
+        description="Ext.create(...) instanciation of ExtJs4/ST2 " enabled="true" 
+        name="ecreate">Ext.create(${className}, {});
+    </template>
     <template autoinsert="true" context="javaScript" deleted="false"
         description="Ext.define(...) stub ExtJs4/ST2" enabled="true"
         name="edefine">/**
